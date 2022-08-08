@@ -1,0 +1,188 @@
+<mdb-carousel [controls]="true" [indicators]="true">
+  <mdb-carousel-item id="hero">
+    <img
+      src="assets/img/slide/slide-1.jpg"
+      class="d-block w-100"
+      alt="..."
+    />
+      <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-container">
+              <div class="carousel-content animate__animated animate__fadeInUp" >
+                  <h2>Third slide label</h2>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              </div>
+          </div>  
+        </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item id="hero">
+    <img
+      src="assets/img/slide/slide-2.jpg"
+      class="d-block w-100"
+      alt="..."
+    />
+    <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-container">
+          <div class="carousel-content animate__animated animate__fadeInUp" >
+              <h2>Third slide label</h2>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+          </div>
+      </div>  
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item id="hero">
+    <img
+      src="assets/img/slide/slide-3.jpg"
+      class="d-block w-100"
+      alt="..."
+    />
+    <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-container">
+          <div class="carousel-content animate__animated animate__fadeInUp" >
+              <h2>Third slide label</h2>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+          </div>
+      </div>  
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>
+  <main>
+    <section class="main-content">
+      <div class="container">
+        <app-hero [article]="hero"></app-hero>
+        <div class="articles-grid">
+          <ng-container *ngIf="articles">
+            <app-article
+              *ngFor="let article of articles; let articleIndex = index"
+              [article]="article"
+              [bordered]="articleIndex !== articles.length - 1"
+            ></app-article>
+          </ng-container>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section id="team" class="team section-bg">
+    <div class="container">
+  
+      <div class="section-title" data-aos="fade-up">
+        <h2><strong>Estado del Tiempo y Niveles de Represas</strong></h2>
+        <p>Condiciones climaticas en las distintas Regiones Nacionales.</p>
+      </div>
+  
+      <div class="row">
+  
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="assets/img/pronostico/pronostico13julio.jpeg" class="img-fluid" alt="" width="300px" height="100px">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Pronostico</h4>
+              <span>Pronostico del Tiempo</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="assets/img/represas/represas.jpg" class="img-fluid" alt="" width="300px" height="100px">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Niveles de las Represas</h4>
+              <span>NIveles de las represas</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <a routerLink="aeropuerto"><img src="assets/img/aeropuerto/aeropuerto.jpg" class="img-fluid" alt="" width="300px" height="100px"></a>
+              
+            </div>
+            <div class="member-info">
+              <h4>Operacion de aeropuertos</h4>
+              <span>Estado de las Operaciones de los aeropuertos</span>
+            </div>
+          </div>
+        </div>
+  
+        <div
+          class="fb-page"
+          data-href="https://www.facebook.com/copeco.hn"
+          data-tabs="timeline"
+          data-width="500"
+          data-height="500"
+          data-small-header="true"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="true"
+        >
+          <blockquote
+            cite="https://www.facebook.com/copeco.hn"
+            class="fb-xfbml-parse-ignore"
+          >
+            <a href="https://www.facebook.com/copeco.hn">COPECO</a>
+          </blockquote>
+        </div>
+  
+        <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="assets/img/team/DSC_0622.JPG" class="img-fluid" alt="" width="300px" height="100px">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+            </div>
+          </div>
+        </div> -->
+  
+      </div>
+      
+      <!-- <div class="row">
+  
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="assets/img/team/DSC_0697.JPG" class="img-fluid" alt="" width="300px" height="100px">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+            </div>
+          </div> -->
+        <!-- </div> -->
+  
+      <!-- </div> -->
+  
+    </div>
+  </section><!-- End Our Team Section -->
