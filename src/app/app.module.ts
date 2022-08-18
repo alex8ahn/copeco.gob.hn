@@ -26,7 +26,7 @@ import { ArticleComponent } from './components/article/article.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './pages/home/home.component';
+import { HomePage } from './pages/home/home.component';
 import { MoreArticlesComponent } from './components/more-articles/more-articles.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
@@ -40,14 +40,15 @@ import { RegionalesComponent } from './pages/regionales/regionales.component';
     ArticleComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
+    HomePage,
     MoreArticlesComponent,
     GetAssetUrlPipe,
     HeroComponent,
     CarouselComponent,
     VisionComponent,
     EstadoTiempoRepresasComponent,
-    RegionalesComponent
+    RegionalesComponent,
+    MoreArticlesComponent
   ],
   imports: [
     BrowserModule,

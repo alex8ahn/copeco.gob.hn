@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./estado-tiempo-represas.component.scss']
 })
 export class EstadoTiempoRepresasComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {

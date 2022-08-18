@@ -21,6 +21,7 @@
     "@angular/router": "~13.2.4",
     "@directus/sdk": "^10.1.2",
     "@fortawesome/fontawesome-free": "^6.0.0",
+    "@popperjs/core": "^2.11.6",
     "angular-directus": "^0.2.2",
     "bootstrap": "^5.2.0",
     "chart.js": "^3.1.1",

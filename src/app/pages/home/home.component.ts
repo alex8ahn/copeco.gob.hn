@@ -8,9 +8,10 @@ import { formatRelativeTime } from 'shared/utils/format-relative-time.js';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomePage implements OnInit {
   hero: Record<string, any> | null = null;
   articles: Record<string, any>[] | null = null;
+
 
   constructor(private router: Router) {}
 
@@ -40,5 +41,7 @@ export class HomeComponent implements OnInit {
     this.hero = first;
     this.articles = rest;
   }
+
+  
 }
 
