@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./estado-tiempo-represas.component.scss']
 })
 export class EstadoTiempoRepresasComponent implements OnInit {
-  
+  title:string = "Estado del Tiempo Operaciones de Aeropuertos y Niveles de Represas" 
+
   constructor() { }
 
   ngOnInit(): void {

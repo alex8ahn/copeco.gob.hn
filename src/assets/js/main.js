@@ -1,5 +1,5 @@
 /**
-* Template Name: Company - v4.7.0
+* Template Name: Company - v4.8.0
 * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
