@@ -83,6 +83,7 @@ h6 {
   z-index: 997;
   padding: 15px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 #header .logo {
@@ -521,8 +522,17 @@ h6 {
 }
 
 @media (max-width: 992px) {
+
+  #hero
+
+  #hero img{
+    position: absolute;
+    width: auto;
+  }
+
   #hero .carousel-container {
     top: 58px;
+    z-index: 1;
   }
 
   #hero .carousel-content h2 {
@@ -535,11 +545,6 @@ h6 {
   }
 }
 
-@media (max-height: 500px) {
-  #hero {
-    height: 120vh;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General

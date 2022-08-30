@@ -33,6 +33,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { VisionComponent } from './pages/vision/vision.component';
 import { EstadoTiempoRepresasComponent } from './pages/estado-tiempo-represas/estado-tiempo-represas.component';
 import { RegionalesComponent } from './pages/regionales/regionales.component';
+import { ArticlePage } from './pages/article/article.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { RegionalesComponent } from './pages/regionales/regionales.component';
     VisionComponent,
     EstadoTiempoRepresasComponent,
     RegionalesComponent,
-    MoreArticlesComponent
+    MoreArticlesComponent,
+    ArticlePage
   ],
   imports: [
     BrowserModule,

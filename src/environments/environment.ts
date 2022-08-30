@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  directusBaseUrl: 'http://localhost:8055',
+  directusBaseUrl: 'http://copeco.gob.hn:8055',
 };
 
 
