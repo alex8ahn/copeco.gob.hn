@@ -1,8 +1,18 @@
-  <app-carousel></app-carousel>
-  <hr>
-  <main>
+<div class="container-fluid">
+  <img
+    class="img-fluid"
+    data-aos="fade-up"
+    src="../../../assets/img/slide/copeco2.png"
+    alt=""
+  />
+</div>
+<app-carousel></app-carousel>
+<hr/>
+
+
+<main>
     <section class="main-content">
-      <div class="container">
+      <div class="container-fluid">
         <app-hero [article]="hero"></app-hero>
         <div class="articles-grid">
           <ng-container *ngIf="articles">
@@ -15,69 +25,83 @@
         </div>
       </div>
     </section>
-  </main>
+</main>
 
-  <section id="team" class="team section-bg">
-    <div class="container">
-  
-      <div class="section-title" data-aos="fade-up">
-        <h2><strong>Estado del Tiempo y Niveles de Represas</strong></h2>
-        <p>Condiciones climaticas en las distintas Regiones Nacionales.</p>
+<section id="team" class="team section-bg">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2><strong>Estado del Tiempo y Niveles de Represas</strong></h2>
+      <p>Condiciones climaticas en las distintas Regiones Nacionales.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up">
+          <div class="member-img">
+            <img
+              src="assets/img/pronostico/pronostico13julio.jpeg"
+              class="img-fluid"
+              alt=""
+              width="300px"
+              height="100px"
+            />
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Pronostico</h4>
+            <span>Pronostico del Tiempo</span>
+          </div>
+        </div>
       </div>
-  
-      <div class="row">
-  
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up">
-            <div class="member-img">
-              <img src="assets/img/pronostico/pronostico13julio.jpeg" class="img-fluid" alt="" width="300px" height="100px">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Pronostico</h4>
-              <span>Pronostico del Tiempo</span>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/represas/represas.jpg" class="img-fluid" alt="" width="300px" height="100px">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Niveles de las Represas</h4>
-              <span>NIveles de las represas</span>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="100">
+          <div class="member-img">
+            <img
+              src="assets/img/represas/represas.jpg"
+              class="img-fluid"
+              alt=""
+              width="300px"
+              height="100px"
+            />
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
-        </div>
-  
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <a routerLink="tiempo"><img src="assets/img/aeropuerto/aeropuerto.jpg" class="img-fluid" alt="" width="300px" height="100px"></a>
-              
-            </div>
-            <div class="member-info">
-              <h4>Operacion de aeropuertos</h4>
-              <span>Estado de las Operaciones de los aeropuertos</span>
-            </div>
-            
+          <div class="member-info">
+            <h4>Niveles de las Represas</h4>
+            <span>NIveles de las represas</span>
           </div>
-          
         </div>
-        <!-- <div
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="200">
+          <div class="member-img">
+            <a routerLink="tiempo"
+              ><img
+                src="assets/img/aeropuerto/aeropuerto.jpg"
+                class="img-fluid"
+                alt=""
+                width="300px"
+                height="100px"
+            /></a>
+          </div>
+          <div class="member-info">
+            <h4>Operacion de aeropuertos</h4>
+            <span>Estado de las Operaciones de los aeropuertos</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div
           class="fb-page"
           data-href="https://www.facebook.com/copeco.hn"
           data-tabs="timeline"
@@ -95,14 +119,19 @@
             <a href="https://www.facebook.com/copeco.hn">COPECO</a>
           </blockquote>
         </div> -->
-        
 
-  
-        
-  
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcopeco.hn&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-          <!-- <div class="member" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcopeco.hn&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="340"
+          height="500"
+          style="border: none; overflow: hidden"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+        <!-- <div class="member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
               <img src="assets/img/team/DSC_0622.JPG" class="img-fluid" alt="" width="300px" height="100px">
               <div class="social">
@@ -117,11 +146,10 @@
               <span>Accountant</span>
             </div>
           </div> -->
-        </div>
-  
       </div>
-      
-      <!-- <div class="row">
+    </div>
+
+    <!-- <div class="row">
   
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up">
@@ -139,9 +167,9 @@
               <span>Chief Executive Officer</span>
             </div>
           </div> -->
-        <!-- </div> -->
-  
-      <!-- </div> -->
-  
-    </div>
-  </section><!-- End Our Team Section -->
+    <!-- </div> -->
+
+    <!-- </div> -->
+  </div>
+</section>
+<!-- End Our Team Section -->
