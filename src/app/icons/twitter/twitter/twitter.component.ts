@@ -5,11 +5,11 @@ import { directus } from 'src/app/services/directus';
 import { formatRelativeTime } from 'shared/utils/format-relative-time';
 
 @Component({
-  selector: 'app-estado-tiempo-represas',
-  templateUrl: './estado-tiempo-represas.component.html',
-  styleUrls: ['./estado-tiempo-represas.component.scss']
+  selector: 'app-twitter',
+  templateUrl: './twitter.component.html',
+  styleUrls: ['./twitter.component.scss']
 })
-export class EstadoTiempoRepresasComponent implements OnInit {
+export class TwitterComponent implements OnInit {
   tiempo: Record<string, any> | null = null;
   moreTiempo: Record<string, any>[] | null = null;
 
@@ -74,5 +74,4 @@ export class EstadoTiempoRepresasComponent implements OnInit {
       this.router.navigate(['404']);
     }
   }
-
 }

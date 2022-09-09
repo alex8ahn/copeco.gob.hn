@@ -6,27 +6,33 @@
     alt=""
   />
 </div>
+<app-divider></app-divider>
 <app-carousel></app-carousel>
-<hr/>
-
-
+<br />
+<app-divider></app-divider>
+<div class="container-fluid">
+  <app-semaforo></app-semaforo>
+</div>
+<hr>
 <main>
-    <section class="main-content">
-      <div class="container-fluid">
-        <app-hero [article]="hero"></app-hero>
-        <div class="articles-grid">
-          <ng-container *ngIf="articles">
-            <app-article
-              *ngFor="let article of articles; let articleIndex = index"
-              [article]="article"
-              [bordered]="articleIndex !== articles.length - 1"
-            ></app-article>
-          </ng-container>
-        </div>
-      </div>
-    </section>
-</main>
+  <section class="main-content">
+    <div class="container-fluid">
 
+      <app-hero [article]="hero"></app-hero>
+
+      <div class="articles-grid">
+        <ng-container *ngIf="articles">
+          <app-article
+            *ngFor="let article of articles; let articleIndex = index"
+            [article]="article"
+            [bordered]="articleIndex !== articles.length - 1"
+          ></app-article>
+        </ng-container>
+      </div>
+    </div>
+  </section>
+</main>
+<app-divider></app-divider>
 <section id="team" class="team section-bg">
   <div class="container">
     <div class="section-title" data-aos="fade-up">
@@ -101,6 +107,7 @@
           </div>
         </div>
       </div>
+
       <!-- <div
           class="fb-page"
           data-href="https://www.facebook.com/copeco.hn"
@@ -150,7 +157,7 @@
     </div>
 
     <!-- <div class="row">
-  
+
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up">
             <div class="member-img">
@@ -173,3 +180,5 @@
   </div>
 </section>
 <!-- End Our Team Section -->
+
+

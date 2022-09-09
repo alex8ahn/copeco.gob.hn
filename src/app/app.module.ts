@@ -34,6 +34,9 @@ import { VisionComponent } from './pages/vision/vision.component';
 import { EstadoTiempoRepresasComponent } from './pages/estado-tiempo-represas/estado-tiempo-represas.component';
 import { RegionalesComponent } from './pages/regionales/regionales.component';
 import { ArticlePage } from './pages/article/article.component';
+import { TwitterComponent } from './icons/twitter/twitter/twitter.component';
+import { DividerComponent } from './components/divider/divider.component';
+import { SemaforoComponent } from './components/semaforo/semaforo.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,10 @@ import { ArticlePage } from './pages/article/article.component';
     EstadoTiempoRepresasComponent,
     RegionalesComponent,
     MoreArticlesComponent,
-    ArticlePage
+    ArticlePage,
+    TwitterComponent,
+    DividerComponent,
+    SemaforoComponent
   ],
   imports: [
     BrowserModule,
