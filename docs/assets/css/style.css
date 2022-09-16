@@ -524,7 +524,9 @@ h6 {
 }
 
 @media (max-width: 992px) {
-  
+  #hero{
+    height: 50vh;
+  }
   #hero .carousel-container {
     top: 58px;
   }
